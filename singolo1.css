@@ -235,11 +235,13 @@ header {
 /* Services */
 .services {
   background-color: #f2f2f2;
+  height: 495px;
+  border-bottom: 5px solid #ffffff;
 }
 .services-content {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 100%;
 }
 .title {
   font-family: 'Loto';
