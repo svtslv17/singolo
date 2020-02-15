@@ -80,23 +80,25 @@ header {
   font-style: normal;
   font-size: 25px;
   text-transform: uppercase;
-  position: relative;
 }
-.logo:hover {
+.logo:hover .logo-star {
   cursor: pointer;
   animation: logo-jump;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
 }
 @keyframes logo-jump {
   from {
-    height: 90px;
+    margin-left: 0;
   }
   50% {
-    height: 80px;
+    margin-left: 40px;
+    font-size: 50px;
+    color: #dbdd78;
+    transform: rotate(200deg);
   }
   to {
-    height: 90px;
+    margin-left: 0;
   }
 }
 .logo-text {
@@ -149,4 +151,83 @@ header {
   width: 3px;
   border-radius: 50%;
   background-color: #494e62;
+}
+
+/* Main styles*/
+
+.main {
+  height: 600px;
+  background-color: #f06c64;
+}
+#left {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 190px;
+  opacity: 40%;
+  padding: 200px 43px 200px 43px;
+}
+#right {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 190px;
+  opacity: 40%;
+  padding: 200px 43px 200px 43px;
+}
+#left:hover, #right:hover {
+  opacity: 80%;
+}
+.slider-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+#iphone1 {
+  margin-left: 110px;
+  margin-bottom: 15px;
+}
+#iphone2 {
+  margin-left: 72px;
+  margin-bottom: 15px;
+}
+#screen1 {
+  height: 333px;
+  width: 188px;
+  background-image: url('assets/Layer 6.png');
+  position: absolute;
+  left: 126px;
+  top: 117px;
+  background-position: 100%, 50%;
+}
+#screen2 {
+  width: 333px;
+  height: 188px;
+  position: absolute;
+  background-image: url('assets/Layer 5.png');
+  left: 485px;
+  bottom: 225px;
+  background-position: 100%, 50%;
+}
+#screen1:hover, #screen2:hover {
+  animation: screen-move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+}
+#screen2:hover {
+  animation: screen-move;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+}
+@keyframes screen-move {
+  from {
+    background-position: 100%, 50%;
+  }
+  50% {
+    background-position: 0%, 100%;
+  }
+  to {
+    background-position: 100%, 50%;
+  }
 }
