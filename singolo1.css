@@ -1,5 +1,5 @@
 /* CSS-Reset*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, services, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -156,8 +156,9 @@ header {
 /* Main styles*/
 
 .main {
-  height: 600px;
+  height: 595px;
   background-color: #f06c64;
+  border-bottom: 5px solid #ea676b;
 }
 #left {
   z-index: 2;
@@ -230,4 +231,72 @@ header {
   to {
     background-position: 100%, 50%;
   }
+}
+/* Services */
+.services {
+  background-color: #f2f2f2;
+}
+.services-content {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.title {
+  font-family: 'Loto';
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  padding: 62px 40px 15px 40px;
+  color: #666d89;
+}
+.article {
+  font-family: 'Loto';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 8px 40px 8px 40px;
+  color: #767e9e;
+}
+.service-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 36px 20px 36px 40px;
+}
+.card {
+  height: 108px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px 15px 0px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.aside-info {
+  display: flex;
+  flex-direction: column;
+}
+.aside-title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: 'Loto';
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.aside-article {
+  width: 219px;
+  height: 70px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: 'Loto';
+  font-weight: 400;
+  text-align: left;
+  overflow: hidden;
+}
+.card:hover {
+  cursor: pointer;
 }
