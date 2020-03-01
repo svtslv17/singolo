@@ -1,0 +1,204 @@
+/* CSS-Reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, services, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS-Reset end */
+
+/*Font-face*/
+@font-face {
+  font-family: 'Loto';
+  src: url('assets/Lato-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Loto';
+  src: url('assets/Lato-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Loto';
+  src: url('assets/Lato-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Loto';
+  src: url('assets/Lato-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Wrapper styles */
+.wrapper {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+/* Portfolio styles */ 
+.portfolio {
+    background-color: #2d303a;
+    height: 865px;
+    border-bottom: 5px solid #323746;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.title {
+    font-family: 'Loto';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    padding: 62px 40px 15px 40px;
+}
+.pf-title, .pf-article {
+    color: #666d89;
+}
+.article {
+    font-family: 'Loto';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 8px 40px 8px 40px;
+}
+.tags {
+    padding: 2px 40px 2px 40px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 940px;
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: center; */
+  }
+  .tags ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+    overflow: hidden;
+  }
+  .tags ul li {
+    display: flex;
+    align-items: center;
+    height: 11px;
+    margin: 0px 10px 2px 0px;
+    padding: 5px 6px 5px 6px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: 'Loto';
+    font-weight: 400;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid #767e9e;
+  }
+  .tags ul li:hover {
+    cursor: pointer;
+    color: #f06c64;
+  }
+  .image-box {
+    display: flex;
+    height: 601px;
+    width: 940px;
+    margin: 14px 40px 64px 40px;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .image-box__img {
+      height: 187px;
+      width: 220px;
+  }
+  .aboutus {
+    background-color: #f2f2f2;
+    height: 730px;
+    border-bottom: 5px solid #fff;
+  }
+  .info-block {
+    height: 500px;   /*убрать*/
+    width: 940px;
+    margin: 35px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+
+  }
+  .info-card {
+    width: 300px;
+    height: 443px;
+    display: flex;
+    flex-direction: column;
+  }
+  .info-card:hover {
+    cursor: pointer;
+  }
+  .info-card__photo {
+    height: 300px;
+    width: 300px;
+  }
+  .info-card__name {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: 'Loto';
+    font-weight: 900;
+    text-align: left;
+  }
+  .info-card__text {
+    margin: 10px 0px 15px 0px;
+    width: 300px;
+    height: 50px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: 'Loto';
+    font-weight: 400;
+    text-align: left;
+  }
+.info-card__links {
+  height: 32px;
+  width: 100%;
+}
+.info-card__links img {
+  height: 33px;
+  width: 33px;
+  margin-right: 3px;
+}
+.info-card__links img:hover {
+  background-color: #767e9e;
+  border-radius: 50%;
+}
